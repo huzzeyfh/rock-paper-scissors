@@ -2,11 +2,14 @@ function getComputerChoice() {
   let max = Math.floor(Math.random() * 3);
 
   if (max === 0) {
-    return "Rock" && console.log("Rock");
+    console.log("Rock");
+    return "Rock";
   } else if (max === 1) {
-    return "Paper" && console.log("Paper");
+    console.log("Paper");
+    return "Paper"; 
   } else {
-    return "Scissor" && console.log("Scissor");
+    console.log("Scissor");
+    return "Scissor"; 
   }
 }
 
@@ -14,13 +17,17 @@ function getHumanChoice() {
     let answer = prompt("Rock, Paper, or Scissor?", "");
 
     if (answer === "Rock") {
-        return "Rock" && console.log("Rock");
+        console.log("Rock");
+        return "Rock";
     } else if (answer === "Paper") {
-        return "Paper" && console.log("Paper");
+        console.log("Paper");
+        return "Paper";
     } else if (answer === "Scissor"){
-        return "Scissor" && console.log("Scissor");
+        console.log("Scissor");
+        return "Scissor";
     } else {
         console.log("Wrong input, follow as prompted")
+        return null;
     }
 }
 
@@ -41,6 +48,8 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose! Scissor beats Paper.");
     } else if (humanChoice === "Paper" && computerChoice === "Rock") {
         console.log("You win! Paper beats Rock.")
+    } else if (humanChoice === null) {
+        console.log("Invalid")
     } else {
         console.log("Draw!")
     }
