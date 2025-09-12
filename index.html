@@ -5,24 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- Buttons -->
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissor">Scissor</button>
+    <div id="div">
 
-    <!-- Result -->
-     <div>
-        <p class="human-choice">Your choice: </p>
-        <p class="computer-choice">Computer choice:</p>
-        <p class="result"></p>
-        <p class="human-point"></p>
-        <p class="computer-point"></p>
-     </div>
+        <!-- Buttons -->
+        <div class="button">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissor</button>
+        </div>
 
+        <!-- Sound -->
+        <audio class="cat-laugh" src="/assets/cat-laugh.mp3"></audio>
+        <audio class="boleh" src="/assets/boleeeeh.mp3"></audio>
+
+        <!-- Result -->
+        <div class="p">
+            <p class="human-choice">Your choice: </p>
+            <p class="computer-choice">Computer choice:</p>
+            <p class="result"></p>
+            <p class="human-point"></p>
+            <p class="computer-point"></p>
+        </div>
+
+        <button class="reset">Reset</button>
+    </div>
 </body>
 
 </html>
